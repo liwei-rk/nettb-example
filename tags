@@ -1,0 +1,37 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.6	//
+CAL_H	cal.h	2;"	d
+CalClient	calclient.cpp	/^class CalClient{$/;"	c	file:
+CalPacket	cal.h	/^	CalPacket(int pcode){$/;"	f	class:CalPacket
+CalPacket	cal.h	/^class CalPacket :public Packet{$/;"	c
+CalPacketFactory	cal.h	/^class CalPacketFactory:public IPacketFactory{$/;"	c
+CalServer	calserver.cpp	/^class CalServer{$/;"	c	file:
+CalServerAdapter	calserver.cpp	/^class CalServerAdapter : public IServerAdapter$/;"	c	file:
+ClientPacketHandler	calclient.cpp	/^class ClientPacketHandler{$/;"	c	file:
+INCLUDE	Makefile	/^INCLUDE=-I ${TBLIB}\/tbnet -I ${TBLIB}\/tbsys$/;"	m
+LIB	Makefile	/^LIB=-L ${TBLIB_ROOT}\/lib$/;"	m
+REQ	cal.h	4;"	d
+RES	cal.h	5;"	d
+TBLIB	Makefile	/^TBLIB=${TBLIB_ROOT}\/include$/;"	m
+createPacket	cal.h	/^    Packet *createPacket(int pcode)$/;"	f	class:CalPacketFactory
+decode	cal.h	/^	bool decode(DataBuffer* input,PacketHeader* header){$/;"	f	class:CalPacket
+encode	cal.h	/^	bool encode(DataBuffer* output){$/;"	f	class:CalPacket
+getOp	cal.h	/^	void getOp(uint32_t& op1,uint32_t&op2){$/;"	f	class:CalPacket
+getRes	cal.h	/^	void getRes(uint32_t &res){$/;"	f	class:CalPacket
+handlePacket	calserver.cpp	/^    IPacketHandler::HPRetCode handlePacket(Connection *connection, Packet *packet)$/;"	f	class:CalServerAdapter
+main	calclient.cpp	/^int main(){$/;"	f
+main	calserver.cpp	/^int main(){$/;"	f
+op1	cal.h	/^		uint32_t op1;$/;"	m	class:CalPacket
+op2	cal.h	/^		uint32_t op2;$/;"	m	class:CalPacket
+res	cal.h	/^		uint32_t res;$/;"	m	class:CalPacket
+setOp	cal.h	/^	void setOp(uint32_t op1,uint32_t op2){$/;"	f	class:CalPacket
+setRes	cal.h	/^	void setRes(uint32_t res){$/;"	f	class:CalPacket
+singalHandler	calserver.cpp	/^void singalHandler(int sig)$/;"	f
+start	calclient.cpp	/^	void start(string addr){$/;"	f	class:CalClient
+start	calserver.cpp	/^	public: void start(string address){$/;"	f	class:CalServer
+trans	calclient.cpp	/^	Transport trans;$/;"	m	class:CalClient	file:
+trans	calserver.cpp	/^	Transport trans;$/;"	m	class:CalServer	file:
